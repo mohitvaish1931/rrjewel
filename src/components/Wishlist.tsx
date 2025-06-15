@@ -40,7 +40,7 @@ const Wishlist: React.FC<WishlistProps> = ({ isOpen, onClose }) => {
               <p className="text-gray-500 text-lg">Your wishlist is empty</p>
               <button
                 onClick={onClose}
-                className="mt-4 bg-orange-400 text-white px-6 py-2 rounded-lg hover:bg-orange-500 transition-colors"
+                className="mt-4 bg-brand text-white px-6 py-2 rounded-lg hover:bg-brand-hover transition-colors"
               >
                 Continue Shopping
               </button>
@@ -64,7 +64,7 @@ const Wishlist: React.FC<WishlistProps> = ({ isOpen, onClose }) => {
                   </div>
                   <h3 className="font-medium text-gray-900 mb-2">{item.name}</h3>
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-orange-400 font-bold">
+                    <span className="text-brand font-bold">
                       Rs. {item.price.toLocaleString()}.00
                     </span>
                     {item.originalPrice && (
@@ -75,7 +75,7 @@ const Wishlist: React.FC<WishlistProps> = ({ isOpen, onClose }) => {
                   </div>
                   <button
                     onClick={() => addToCart(item)}
-                    className="w-full bg-orange-400 text-white py-2 px-4 rounded-lg font-medium hover:bg-orange-500 transition-colors flex items-center justify-center space-x-2"
+                    className="w-full bg-brand text-white py-2 px-4 rounded-lg font-medium hover:bg-brand-hover transition-colors flex items-center justify-center space-x-2"
                   >
                     <ShoppingBag className="h-4 w-4" />
                     <span>Add to Cart</span>

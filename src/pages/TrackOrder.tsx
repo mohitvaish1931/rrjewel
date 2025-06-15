@@ -33,7 +33,7 @@ const TrackOrder = () => {
                 value={orderNumber}
                 onChange={(e) => setOrderNumber(e.target.value)}
                 placeholder="Enter your order number"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-900 focus:border-transparent outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
                 required
               />
             </div>
@@ -48,14 +48,14 @@ const TrackOrder = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-900 focus:border-transparent outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
                 required
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-amber-900 text-white py-3 px-6 rounded-lg font-medium hover:bg-amber-800 transition-colors flex items-center justify-center space-x-2"
+              className="w-full bg-brand text-white py-3 px-6 rounded-lg font-medium hover:bg-brand-hover transition-colors flex items-center justify-center space-x-2"
             >
               <Search className="h-5 w-5" />
               <span>TRACK ORDER</span>
@@ -81,7 +81,7 @@ const TrackOrder = () => {
 
             <div className="flex items-center space-x-4">
               <div className="flex-shrink-0">
-                <Package className="h-8 w-8 text-amber-900" />
+                <Package className="h-8 w-8 text-brand" />
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-medium text-gray-900">Processing</h3>

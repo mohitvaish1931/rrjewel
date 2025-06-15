@@ -45,12 +45,12 @@ const Footer = () => {
           <div className="col-span-1">
             <h4 className="font-medium text-gray-900 mb-6">QUICK LINKS</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-sm text-gray-600 hover:text-orange-400 transition-colors">Get In Touch</a></li>
-              <li><a href="#" className="text-sm text-gray-600 hover:text-orange-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-sm text-gray-600 hover:text-orange-400 transition-colors">Shipping policy</a></li>
-              <li><a href="#" className="text-sm text-gray-600 hover:text-orange-400 transition-colors">Terms of Conditions</a></li>
-              <li><a href="#" className="text-sm text-gray-600 hover:text-orange-400 transition-colors">Contact information</a></li>
-              <li><a href="#" className="text-sm text-gray-600 hover:text-orange-400 transition-colors">Return and Refund policy</a></li>
+              <li><a href="#" className="text-sm text-gray-600 hover:text-brand transition-colors">Get In Touch</a></li>
+              <li><a href="#" className="text-sm text-gray-600 hover:text-brand transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="text-sm text-gray-600 hover:text-brand transition-colors">Shipping policy</a></li>
+              <li><a href="#" className="text-sm text-gray-600 hover:text-brand transition-colors">Terms of Conditions</a></li>
+              <li><a href="#" className="text-sm text-gray-600 hover:text-brand transition-colors">Contact information</a></li>
+              <li><a href="#" className="text-sm text-gray-600 hover:text-brand transition-colors">Return and Refund policy</a></li>
             </ul>
           </div>
 
@@ -68,15 +68,15 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:border-transparent outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
               />
-              <button className="w-full bg-orange-400 text-white py-3 px-6 rounded-lg font-medium hover:bg-orange-500 transition-colors">
+              <button className="w-full bg-brand text-white py-3 px-6 rounded-lg font-medium hover:bg-brand-hover transition-colors">
                 SUBSCRIBE
               </button>
             </div>
 
             <div className="mt-6">
-              <a href="#" className="inline-flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full hover:bg-orange-400 hover:text-white transition-colors">
+              <a href="#" className="inline-flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full hover:bg-brand hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -91,7 +91,7 @@ const Footer = () => {
             <div className="bg-blue-500 text-white px-3 py-1 rounded text-sm font-bold">PAYTM</div>
             <div className="bg-purple-600 text-white px-3 py-1 rounded text-sm font-bold">PhonePe</div>
             <div className="bg-green-600 text-white px-3 py-1 rounded text-sm font-bold">UPI</div>
-            <div className="bg-orange-500 text-white px-3 py-1 rounded text-sm font-bold">CASH ON DELIVERY</div>
+            <div className="bg-brand text-white px-3 py-1 rounded text-sm font-bold">CASH ON DELIVERY</div>
           </div>
         </div>
       </div>

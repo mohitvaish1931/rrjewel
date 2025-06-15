@@ -165,7 +165,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
               value={state.searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
               placeholder="Search for jewelry by name or category..."
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:border-transparent outline-none"
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
               autoFocus
             />
           </div>
@@ -182,7 +182,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
                 <Link
                   to="/products"
                   onClick={onClose}
-                  className="mt-4 inline-block bg-orange-400 text-white px-6 py-2 rounded-lg hover:bg-orange-500 transition-colors"
+                  className="mt-4 inline-block bg-brand text-white px-6 py-2 rounded-lg hover:bg-brand-hover transition-colors"
                 >
                   View All Products
                 </Link>
@@ -201,7 +201,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
                           className="w-full h-32 object-cover rounded-lg"
                         />
                         {product.sale && (
-                          <div className="absolute top-2 left-2 bg-orange-400 text-white px-2 py-1 text-xs font-medium rounded">
+                          <div className="absolute top-2 left-2 bg-brand text-white px-2 py-1 text-xs font-medium rounded">
                             Sale
                           </div>
                         )}
@@ -222,7 +222,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
                       <h3 className="font-medium text-gray-900 mb-2">{product.name}</h3>
                       <div className="flex items-center justify-between mb-3">
                         <div className="flex items-center space-x-2">
-                          <span className="text-orange-400 font-bold">
+                          <span className="text-brand font-bold">
                             Rs. {product.price.toLocaleString()}.00
                           </span>
                           {product.originalPrice && (
@@ -236,7 +236,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
                       {!product.soldOut && (
                         <button
                           onClick={() => addToCart(product)}
-                          className="w-full bg-orange-400 text-white py-2 px-4 rounded-lg font-medium hover:bg-orange-500 transition-colors flex items-center justify-center space-x-2"
+                          className="w-full bg-brand text-white py-2 px-4 rounded-lg font-medium hover:bg-brand-hover transition-colors flex items-center justify-center space-x-2"
                         >
                           <ShoppingBag className="h-4 w-4" />
                           <span>Add to Cart</span>

@@ -29,11 +29,11 @@ const Header = () => {
   return (
     <>
       {/* Top banner */}
-      <div className="bg-orange-400 text-white text-center py-2 text-sm">
+      <div className="bg-brand text-white text-center py-2 text-sm">
         GET YOUR JEWELRY FASTER THAN EVER! 
         <Link 
           to="/products"
-          className="underline ml-2 hover:text-orange-200 transition-colors"
+          className="underline ml-2 hover:text-brand-light transition-colors"
         >
           Shop now
         </Link>
@@ -46,7 +46,7 @@ const Header = () => {
             {/* Search */}
             <div className="flex items-center">
               <button onClick={() => setIsSearchOpen(true)}>
-                <Search className="h-5 w-5 text-gray-600 hover:text-orange-400 cursor-pointer transition-colors" />
+                <Search className="h-5 w-5 text-gray-600 hover:text-brand cursor-pointer transition-colors" />
               </button>
             </div>
 
@@ -75,7 +75,7 @@ const Header = () => {
                 title={state.user ? `Signed in as ${state.user.name}` : 'Sign in'}
               >
                 <User className={`h-5 w-5 transition-colors ${
-                  state.user ? 'text-orange-400' : 'text-gray-600 hover:text-orange-400'
+                  state.user ? 'text-brand' : 'text-gray-600 hover:text-brand'
                 }`} />
                 {state.user && (
                   <div className="absolute -top-1 -right-1 w-2 h-2 bg-green-500 rounded-full"></div>
@@ -86,8 +86,8 @@ const Header = () => {
                 onClick={() => setIsWishlistOpen(true)}
                 className="relative"
               >
-                <Heart className="h-5 w-5 text-gray-600 hover:text-orange-400 cursor-pointer transition-colors" />
-                <span className="absolute -top-2 -right-2 bg-orange-400 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                <Heart className="h-5 w-5 text-gray-600 hover:text-brand cursor-pointer transition-colors" />
+                <span className="absolute -top-2 -right-2 bg-brand text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
                   {state.wishlist.length}
                 </span>
               </button>
@@ -96,8 +96,8 @@ const Header = () => {
                 onClick={() => setIsCartOpen(true)}
                 className="relative"
               >
-                <ShoppingBag className="h-5 w-5 text-gray-600 hover:text-orange-400 cursor-pointer transition-colors" />
-                <span className="absolute -top-2 -right-2 bg-orange-400 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                <ShoppingBag className="h-5 w-5 text-gray-600 hover:text-brand cursor-pointer transition-colors" />
+                <span className="absolute -top-2 -right-2 bg-brand text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
                   {state.cart.length}
                 </span>
               </button>
@@ -109,7 +109,7 @@ const Header = () => {
             <div className="flex items-center justify-center space-x-8 py-4">
               <Link 
                 to="/" 
-                className="text-gray-900 font-medium hover:text-orange-400 transition-colors border-b-2 border-transparent hover:border-orange-400 pb-1"
+                className="text-gray-900 font-medium hover:text-brand transition-colors border-b-2 border-transparent hover:border-brand pb-1"
               >
                 HOME
               </Link>
@@ -117,7 +117,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => setIsShopByOpen(!isShopByOpen)}
-                  className="flex items-center space-x-1 text-gray-700 hover:text-orange-400 cursor-pointer transition-colors font-medium"
+                  className="flex items-center space-x-1 text-gray-700 hover:text-brand cursor-pointer transition-colors font-medium"
                 >
                   <span>SHOP BY</span>
                   <ChevronDown className="h-4 w-4" />
@@ -127,21 +127,21 @@ const Header = () => {
                   <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg border z-50">
                     <Link
                       to="/earrings"
-                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400 transition-colors"
+                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand transition-colors"
                       onClick={() => setIsShopByOpen(false)}
                     >
                       Earrings
                     </Link>
                     <Link
                       to="/bracelets"
-                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400 transition-colors"
+                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand transition-colors"
                       onClick={() => setIsShopByOpen(false)}
                     >
                       Bracelets
                     </Link>
                     <Link
                       to="/necklaces"
-                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400 transition-colors"
+                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand transition-colors"
                       onClick={() => setIsShopByOpen(false)}
                     >
                       Necklaces
@@ -152,21 +152,21 @@ const Header = () => {
 
               <Link 
                 to="/products" 
-                className="text-gray-700 font-medium hover:text-orange-400 transition-colors"
+                className="text-gray-700 font-medium hover:text-brand transition-colors"
               >
                 ALL PRODUCTS
               </Link>
               
               <Link 
                 to="/track-order" 
-                className="text-gray-700 font-medium hover:text-orange-400 transition-colors"
+                className="text-gray-700 font-medium hover:text-brand transition-colors"
               >
                 TRACK ORDER
               </Link>
               
               <Link 
                 to="/contact" 
-                className="text-gray-700 font-medium hover:text-orange-400 transition-colors"
+                className="text-gray-700 font-medium hover:text-brand transition-colors"
               >
                 CONTACT
               </Link>

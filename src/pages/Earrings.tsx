@@ -94,7 +94,7 @@ const Earrings = () => {
               <div key={product.id} className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-lg bg-gray-100 aspect-square mb-4">
                   {product.sale && (
-                    <div className="absolute top-4 left-4 bg-orange-400 text-white px-3 py-1 text-sm font-medium rounded z-10">
+                    <div className="absolute top-4 left-4 bg-brand text-white px-3 py-1 text-sm font-medium rounded z-10">
                       Sale
                     </div>
                   )}
@@ -119,7 +119,7 @@ const Earrings = () => {
                   {!product.soldOut && (
                     <button
                       onClick={() => addToCart(product)}
-                      className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-orange-400 text-white px-4 py-2 rounded-lg font-medium hover:bg-orange-500 transition-colors opacity-0 group-hover:opacity-100 flex items-center space-x-2"
+                      className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-brand text-white px-4 py-2 rounded-lg font-medium hover:bg-brand-hover transition-colors opacity-0 group-hover:opacity-100 flex items-center space-x-2"
                     >
                       <ShoppingBag className="h-4 w-4" />
                       <span>Add to Cart</span>

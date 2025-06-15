@@ -47,7 +47,7 @@ const Cart: React.FC<CartProps> = ({ isOpen, onClose }) => {
               <p className="text-gray-500 text-lg">Your cart is empty</p>
               <button
                 onClick={onClose}
-                className="mt-4 bg-orange-400 text-white px-6 py-2 rounded-lg hover:bg-orange-500 transition-colors"
+                className="mt-4 bg-brand text-white px-6 py-2 rounded-lg hover:bg-brand-hover transition-colors"
               >
                 Continue Shopping
               </button>
@@ -63,7 +63,7 @@ const Cart: React.FC<CartProps> = ({ isOpen, onClose }) => {
                   />
                   <div className="flex-1">
                     <h3 className="font-medium text-gray-900">{item.name}</h3>
-                    <p className="text-orange-400 font-bold">Rs. {item.price.toLocaleString()}.00</p>
+                    <p className="text-brand font-bold">Rs. {item.price.toLocaleString()}.00</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <button
@@ -97,7 +97,7 @@ const Cart: React.FC<CartProps> = ({ isOpen, onClose }) => {
             <div className="flex items-center justify-between mb-4">
               <span className="text-lg font-bold">Total: Rs. {getTotalPrice().toLocaleString()}.00</span>
             </div>
-            <button className="w-full bg-orange-400 text-white py-3 px-6 rounded-lg font-medium hover:bg-orange-500 transition-colors">
+            <button className="w-full bg-brand text-white py-3 px-6 rounded-lg font-medium hover:bg-brand-hover transition-colors">
               Proceed to Checkout
             </button>
           </div>

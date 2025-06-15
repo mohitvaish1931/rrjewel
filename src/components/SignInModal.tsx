@@ -69,7 +69,7 @@ const SignInModal = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:border-transparent outline-none"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
                   placeholder="Enter your full name"
                   required={isSignUp}
                 />
@@ -88,7 +88,7 @@ const SignInModal = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:border-transparent outline-none"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
                 placeholder="Enter your email"
                 required
               />
@@ -106,7 +106,7 @@ const SignInModal = () => {
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-400 focus:border-transparent outline-none"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
                 placeholder="Enter your password"
                 required
               />
@@ -115,7 +115,7 @@ const SignInModal = () => {
 
           <button
             type="submit"
-            className="w-full bg-orange-400 text-white py-3 px-6 rounded-lg font-medium hover:bg-orange-500 transition-colors"
+            className="w-full bg-brand text-white py-3 px-6 rounded-lg font-medium hover:bg-brand-hover transition-colors"
           >
             {isSignUp ? 'Create Account' : 'Sign In'}
           </button>
@@ -126,7 +126,7 @@ const SignInModal = () => {
             {isSignUp ? 'Already have an account?' : "Don't have an account?"}
             <button
               onClick={() => setIsSignUp(!isSignUp)}
-              className="ml-2 text-orange-400 hover:text-orange-500 font-medium"
+              className="ml-2 text-brand hover:text-brand-hover font-medium"
             >
               {isSignUp ? 'Sign In' : 'Sign Up'}
             </button>
