@@ -11,12 +11,12 @@ const Footer = () => {
             <div className="mb-6">
               <div className="flex items-center mb-2">
                 <img 
-                  src="/Your paragraph text.png" 
-                  alt="Radiant Reflection Logo" 
+                  src="/rradiant-logo.jpg" 
+                  alt="RRadiant Reflection Logo" 
                   className="h-8 w-8 mr-2"
                 />
                 <div className="text-xl font-light tracking-wide text-gray-900">
-                  <span className="font-serif">RADIANT REFLECTION</span>
+                  <span className="font-serif">RRADIANT REFLECTION</span>
                 </div>
               </div>
               <div className="text-xs text-gray-600 italic font-light mb-4">
@@ -37,7 +37,7 @@ const Footer = () => {
 
             <div>
               <h4 className="font-medium text-gray-900 mb-2">Contact Us</h4>
-              <p className="text-sm text-gray-600">radiantreflection.customercare@gmail.com</p>
+              <p className="text-sm text-gray-600">rradiantreflection.customercare@gmail.com</p>
             </div>
           </div>
 
@@ -59,9 +59,9 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div className="col-span-1">
-            <h4 className="font-medium text-gray-900 mb-4">INBOX TO RADIANT REFLECTION OFFICIAL</h4>
+            <h4 className="font-medium text-gray-900 mb-4">INBOX TO RRADIANT REFLECTION OFFICIAL</h4>
             <p className="text-sm text-gray-600 mb-6">
-              Join RADIANT REFLECTION exclusive seller community and showcase your exquisite jewelry to a wider audience. Our platform is designed to provide a seamless selling experience with secure transactions, dedicated support, and a growing customer base.
+              Join RRADIANT REFLECTION exclusive seller community and showcase your exquisite jewelry to a wider audience. Our platform is designed to provide a seamless selling experience with secure transactions, dedicated support, and a growing customer base.
             </p>
             
             <div className="space-y-4">

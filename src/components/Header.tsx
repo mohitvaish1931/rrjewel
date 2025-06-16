@@ -54,12 +54,12 @@ const Header = () => {
             <Link to="/" className="text-center">
               <div className="flex items-center justify-center mb-1">
                 <img 
-                  src="/Your paragraph text.png" 
-                  alt="Radiant Reflection Logo" 
+                  src="/rradiant-logo.jpg" 
+                  alt="RRadiant Reflection Logo" 
                   className="h-8 w-8 mr-2"
                 />
                 <div className="text-xl font-light tracking-wide text-gray-900">
-                  <span className="font-serif">RADIANT REFLECTION</span>
+                  <span className="font-serif">RRADIANT REFLECTION</span>
                 </div>
               </div>
               <div className="text-xs text-gray-600 italic font-light">
@@ -170,6 +170,15 @@ const Header = () => {
               >
                 CONTACT
               </Link>
+
+              {state.user && state.user.email === 'admin@rradiant.com' && (
+                <Link 
+                  to="/admin" 
+                  className="text-brand font-medium hover:text-brand-hover transition-colors"
+                >
+                  ADMIN
+                </Link>
+              )}
             </div>
           </nav>
         </div>
