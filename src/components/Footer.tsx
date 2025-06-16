@@ -85,13 +85,70 @@ const Footer = () => {
 
         {/* Payment Methods */}
         <div className="border-t border-gray-200 pt-8">
-          <div className="flex flex-wrap items-center justify-center space-x-4 opacity-60">
-            <div className="bg-blue-600 text-white px-3 py-1 rounded text-sm font-bold">VISA</div>
-            <div className="bg-red-500 text-white px-3 py-1 rounded text-sm font-bold">MASTER</div>
-            <div className="bg-blue-500 text-white px-3 py-1 rounded text-sm font-bold">PAYTM</div>
-            <div className="bg-purple-600 text-white px-3 py-1 rounded text-sm font-bold">PhonePe</div>
-            <div className="bg-green-600 text-white px-3 py-1 rounded text-sm font-bold">UPI</div>
-            <div className="bg-brand text-white px-3 py-1 rounded text-sm font-bold">CASH ON DELIVERY</div>
+          <div className="flex flex-wrap items-center justify-center space-x-6 opacity-70">
+            {/* Visa */}
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png" 
+              alt="Visa" 
+              className="h-8 object-contain"
+            />
+            
+            {/* Mastercard */}
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" 
+              alt="Mastercard" 
+              className="h-8 object-contain"
+            />
+            
+            {/* PayPal */}
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/200px-PayPal.svg.png" 
+              alt="PayPal" 
+              className="h-8 object-contain"
+            />
+            
+            {/* Google Pay */}
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/200px-Google_Pay_Logo.svg.png" 
+              alt="Google Pay" 
+              className="h-8 object-contain"
+            />
+            
+            {/* PhonePe */}
+            <img 
+              src="https://logos-world.net/wp-content/uploads/2020/11/PhonePe-Logo.png" 
+              alt="PhonePe" 
+              className="h-8 object-contain"
+            />
+            
+            {/* Paytm */}
+            <img 
+              src="https://logos-world.net/wp-content/uploads/2020/11/Paytm-Logo.png" 
+              alt="Paytm" 
+              className="h-8 object-contain"
+            />
+            
+            {/* UPI */}
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/200px-UPI-Logo-vector.svg.png" 
+              alt="UPI" 
+              className="h-8 object-contain"
+            />
+            
+            {/* Razorpay */}
+            <img 
+              src="https://razorpay.com/assets/razorpay-logo.svg" 
+              alt="Razorpay" 
+              className="h-8 object-contain"
+            />
+            
+            {/* Cash on Delivery Icon */}
+            <div className="flex items-center space-x-2 bg-gray-100 px-3 py-2 rounded">
+              <svg className="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <span className="text-sm font-medium text-gray-600">COD</span>
+            </div>
           </div>
         </div>
       </div>
